@@ -11,6 +11,10 @@ namespace WPISPI
 	    public SPI(int channel, int speed){
 		    this.channel = channel;
 		    this.speed = speed;
+		    if(speed < 500000){
+			    throw new Exception("Speed should be greater than 500 KHz (500,000 Hz)");
+		    }
+		    Core.WiringPiSPISetup(channel, speed);
 	    }
 
 	    public byte[] SPIRxTx(byte[] inData, int length){
