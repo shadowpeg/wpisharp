@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPICore", "WPICore\WPICore.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Driver", "Driver\Driver.csproj", "{F7AC789D-F10C-46F3-84DA-22495D0025EF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPIDriver", "SPIDriver\SPIDriver.csproj", "{4616D936-4229-41C8-B395-D29E7F0D42A7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,5 +46,17 @@ Global
 		{F7AC789D-F10C-46F3-84DA-22495D0025EF}.Release|x64.Build.0 = Release|Any CPU
 		{F7AC789D-F10C-46F3-84DA-22495D0025EF}.Release|x86.ActiveCfg = Release|Any CPU
 		{F7AC789D-F10C-46F3-84DA-22495D0025EF}.Release|x86.Build.0 = Release|Any CPU
+		{4616D936-4229-41C8-B395-D29E7F0D42A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4616D936-4229-41C8-B395-D29E7F0D42A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4616D936-4229-41C8-B395-D29E7F0D42A7}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{4616D936-4229-41C8-B395-D29E7F0D42A7}.Debug|x64.Build.0 = Debug|Any CPU
+		{4616D936-4229-41C8-B395-D29E7F0D42A7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4616D936-4229-41C8-B395-D29E7F0D42A7}.Debug|x86.Build.0 = Debug|Any CPU
+		{4616D936-4229-41C8-B395-D29E7F0D42A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4616D936-4229-41C8-B395-D29E7F0D42A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4616D936-4229-41C8-B395-D29E7F0D42A7}.Release|x64.ActiveCfg = Release|Any CPU
+		{4616D936-4229-41C8-B395-D29E7F0D42A7}.Release|x64.Build.0 = Release|Any CPU
+		{4616D936-4229-41C8-B395-D29E7F0D42A7}.Release|x86.ActiveCfg = Release|Any CPU
+		{4616D936-4229-41C8-B395-D29E7F0D42A7}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
