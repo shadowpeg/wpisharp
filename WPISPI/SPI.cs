@@ -1,5 +1,5 @@
 ﻿using System;
-using Core;
+using WPICore;
 
 namespace WPISPI
 {
@@ -19,7 +19,7 @@ namespace WPISPI
 
 	    public byte[] SPIRxTx(byte[] inData, int length){
 		    byte[] trx = inData;
-		    Core.SPIRxTx(ref trx);
+		    Core.SPIRxTx(this.channel, ref trx, length);
 		    return trx;
 	    }
 

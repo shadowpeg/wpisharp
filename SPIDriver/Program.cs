@@ -1,4 +1,6 @@
 ﻿using System;
+using WPICore;
+using WPISPI;
 
 namespace SPIDriver
 {
@@ -6,7 +8,8 @@ namespace SPIDriver
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+		Core.WiringPiSetup();
+		var spi = new SPI(0, 500000);
         }
     }
 }

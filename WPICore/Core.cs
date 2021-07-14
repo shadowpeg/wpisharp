@@ -115,7 +115,7 @@ namespace WPICore
 		    return wiringPiSPISetup(channel, speed);
 	    }
 
-	    public static int SPIRxTx(int channel, byte[] data, int len){
+	    public static int SPIRxTx(int channel, ref byte[] data, int len){
 		    return wiringPiSPIDataRW(channel, data, len);
 	    }
 #endregion
