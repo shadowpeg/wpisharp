@@ -30,6 +30,11 @@ namespace WPICore
 	    [DllImport("wiringPi")]
 	    private static extern void analogWrite(int pin, int value);
 
+	    [DllImport("wiringPi")]
+	    private static extern int wiringPiSPISetup(int channel, int speed);
+	    [DllImport("wiringPi")]
+	    private static extern int wiringPiSPIDataRW(int channel, byte[] data, int len);
+
 	    private Core(){
 	    }
 
@@ -102,6 +107,17 @@ namespace WPICore
 	    
 
 
+#endregion
+
+#region SPI Related Function
+	    public static int WiringPiSPISetup(int channel, int speed){
+		    CheckWPIInited();
+		    return wiringPiSPISetup(channel, speed);
+	    }
+
+	    public static int SPIRxTx(int channel, byte[] data, int len){
+		    return wiringPiSPIDataRW(channel, data, len);
+	    }
 #endregion
 
 	    private static void CheckWPIInited(){
